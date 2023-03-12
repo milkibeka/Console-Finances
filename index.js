@@ -87,5 +87,22 @@ var finances = [
     ['Feb-2017', 671099],
   ];
 
-var numMonth= finances.length;
-console.log (numMonth);
+// Number of Months
+var numMonths= finances.length;
+console.log (numMonths);
+
+// Total Gains
+var targetMonth= 0;
+var monthlyDate=0;
+var monthlyAmount=0;
+var totalGains=0
+
+for (var i=0; i<numMonths; i++) {
+targetMonth= finances [i];
+monthlyDate= targetMonth [0];
+monthlyAmount= targetMonth [1];
+totalGains+=monthlyAmount;
+}
+console.log (totalGains);
+
+//
