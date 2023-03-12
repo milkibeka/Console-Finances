@@ -89,15 +89,37 @@ var finances = [
  var numMonths=finances.length;
  console.log(numMonths);
  
- var monthlyGain1=finances[0][1];
- console.log(monthlyGain1);
+ //var monthlyGain1=finances[0][1];
+ //console.log(monthlyGain1);
 
- for (i=0; i<numMonths; i++) {
-  console.log(finances[i][1]);} 
+ //for (i=0; i<numMonths; i++) {
+ // console.log(finances[i][1]);} 
 
 
- var totalGains =0;
- for (var i=0; i<numMonths;i++){
-   totalGains += finances[i][1];
- }
- console.log(totalGains);
+ //var totalGains =0;
+ 
+
+
+ //for (var i=0; i<numMonths;i++){totalGains += finances[i][1];}
+ //console.log(totalGains);
+
+var total = 0;  
+var monthlyChange = 0;
+var totalChange = 0;
+var previousAmount = 0;
+var amount;
+
+ for (var i = 0; i < numMonths; i++) {
+  firstData = finances[i];
+  date = firstData[0];
+  amount = firstData[1];
+  total += amount;  
+
+  if (i > 0) monthlyChange = amount - previousAmount;
+ 
+  previousAmount = amount;
+ 
+ totalChange += monthlyChange;
+}
+console.log(totalChange);
+
