@@ -108,6 +108,8 @@ var monthlyChange = 0;
 var totalChange = 0;
 var previousAmount = 0;
 var amount;
+var largestChange=[' ',0];
+var date;
 
  for (var i = 0; i < numMonths; i++) {
   firstData = finances[i];
@@ -120,9 +122,17 @@ var amount;
   previousAmount = amount;
  
  totalChange += monthlyChange;
+ if (monthlyChange>largestChange[1])
+ largestChange=[date, monthlyChange];
 }
 console.log(totalChange);
 
 average = Math.round((totalChange / (numMonths - 1)) * 100) / 100;
 
 console.log(average); 
+
+
+
+
+
+console.log(largestChange); 
