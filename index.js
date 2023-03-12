@@ -123,3 +123,6 @@ var amount;
 }
 console.log(totalChange);
 
+average = Math.round((totalChange / (numMonths - 1)) * 100) / 100;
+
+console.log(average); 
