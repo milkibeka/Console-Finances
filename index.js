@@ -92,4 +92,12 @@ var finances = [
  var monthlyGain1=finances[0][1];
  console.log(monthlyGain1);
 
- for (i=0; i<numMonths; i++) {console.log(finances[i][1]);} 
+ for (i=0; i<numMonths; i++) {
+  console.log(finances[i][1]);} 
+
+
+ var totalGains =0;
+ for (var i=0; i<numMonths;i++){
+   totalGains += finances[i][1];
+ }
+ console.log(totalGains);
