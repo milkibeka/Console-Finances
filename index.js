@@ -122,4 +122,6 @@ previousMonth=monthlyAmount;
 totalChange+=monthlyChange;
 }
 
-console.log (totalChange);
+//console.log (totalChange);
+averageChange = Math.round ((totalChange/(numMonths-1))*100)/100;
+console.log (averageChange);
