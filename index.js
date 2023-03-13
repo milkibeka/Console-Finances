@@ -158,7 +158,7 @@ analysis=
 numMonths +
 '\n' +
 '\n' +
-'Total:' +
+'Total: ' +
 '$' +
 totalGains +
 '\n' +
