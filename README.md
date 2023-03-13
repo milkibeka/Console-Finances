@@ -12,8 +12,12 @@ https://milkibeka.github.io/Console-Finances/
 
 ## Credits
  This analysis is done using the dateset provided by UoB Front-end & UX Skills Bootcamp.
+ 
  Other than course materials
+
  https://www.w3schools.com/js/js_intro.asp
+ 
  https://youtu.be/hdI2bqOjy3c
+ 
  are used for general information about Javascript.
 
