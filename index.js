@@ -102,6 +102,11 @@ var totalGains=0
 var previousMonth=0;
 var monthlyChange=0;
 var totalChange=0;
+var averageChange;
+
+var biggestIncrease= ['', 0]
+var biggestDecrease=['', 99999999999]
+
 
 
 for (var i=0; i<numMonths; i++) {
@@ -120,8 +125,19 @@ totalGains+=monthlyAmount;
 if (i>0) monthlyChange= monthlyAmount-previousMonth;
 previousMonth=monthlyAmount;
 totalChange+=monthlyChange;
-}
+
 
 //console.log (totalChange);
-averageChange = Math.round ((totalChange/(numMonths-1))*100)/100;
-console.log (averageChange);
+//averageChange = Math.round ((totalChange/(numMonths-1))*100)/100;
+// console.log (averageChange);
+
+if (monthlyChange>biggestIncrease[1])
+biggestIncrease= [monthlyDate, monthlyChange];
+
+if (monthlyChange<biggestDecrease[1]) 
+biggestDecrease= [monthlyDate, monthlyChange];
+
+}
+
+console.log (biggestIncrease);
+console.log (biggestDecrease);
