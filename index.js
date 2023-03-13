@@ -92,7 +92,7 @@ var finances = [
 var numMonths= finances.length;
 // console.log (numMonths);
 
-// Total Gains
+// Variables 
 
 var targetMonth= 0;
 var monthlyDate=0;
@@ -107,7 +107,7 @@ var averageChange;
 var biggestIncrease= ['', 0]
 var biggestDecrease=['', 99999999999]
 
-
+// Total Gains
 
 for (var i=0; i<numMonths; i++) {
 targetMonth= finances [i];
@@ -145,6 +145,7 @@ biggestDecrease= [monthlyDate, monthlyChange];
 // Results
 
 var analysis;
+
 averageChange = Math.round ((totalChange/(numMonths-1))*100)/100;
 
 analysis=
