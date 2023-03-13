@@ -90,7 +90,7 @@ var finances = [
 // Number of Months
 
 var numMonths= finances.length;
-console.log (numMonths);
+// console.log (numMonths);
 
 // Total Gains
 
@@ -139,5 +139,48 @@ biggestDecrease= [monthlyDate, monthlyChange];
 
 }
 
-console.log (biggestIncrease);
-console.log (biggestDecrease);
+// console.log (biggestIncrease);
+// console.log (biggestDecrease);
+
+// Results
+
+var analysis;
+averageChange = Math.round ((totalChange/(numMonths-1))*100)/100;
+
+analysis=
+'\n' +
+'Financial Analysis' +
+'\n' +
+'-------------------' +
+'\n' +
+'\n' +
+'Total Months: ' +
+numMonths +
+'\n' +
+'\n' +
+'Total:' +
+'$' +
+totalGains +
+'\n' +
+'\n' +
+'Average Change: ' +
+'$' +
+averageChange +
+'\n' +
+'\n' +
+'Greatest Increase in Profits/Losses: ' +
+biggestIncrease [0] +
+'  ($' +
+biggestIncrease [1] +
+')' +
+'\n' +
+'\n' +
+'Greatest Decrease in Profits/Losses: ' +
+biggestDecrease [0] +
+'  ($' +
+biggestDecrease [1] +
+')' 
+;
+console.log (analysis);
+
+
