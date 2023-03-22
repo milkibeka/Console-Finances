@@ -16,7 +16,7 @@ Analysis includes;
 Resulting analysis displayed on the console as shown in the screenshot below.
 ## Link 
 
-https://milkibeka.github.io/Console-Finances/
+https://milkibeka.github.io/Console-Finances-Fatma/
 
 
 
